@@ -469,8 +469,8 @@ function initCheckout() {
     message += `\n*Total (incl. ₦5,000 Shipping):* ₦${total.toLocaleString()}\n`;
     message += `\nPlease confirm my order.`;
 
-    // Replace with actual WhatsApp number (e.g. 1234567890)
-    const phone = '1234567890';
+    // Replace with actual WhatsApp number
+    const phone = '+2349168023113';
     const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     
     const btn = form.querySelector('button[type="submit"]');

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-top: 84px; /* nav offset */
+      padding-top: 84px;
+      /* nav offset */
     }
 
     .hero__eyebrow {
@@ -48,11 +50,13 @@
       transform: translateY(20px);
       animation: heroFadeUp 0.8s ease 0.2s forwards;
     }
+
     .hero__eyebrow-line {
       width: 40px;
       height: 1px;
       background: var(--gold);
     }
+
     .hero__eyebrow-text {
       font-size: 10px;
       font-weight: 700;
@@ -72,10 +76,12 @@
       transform: translateY(30px);
       animation: heroFadeUp 0.9s ease 0.4s forwards;
     }
+
     .hero__title .outline-text {
       -webkit-text-stroke: 1.5px var(--cream);
       color: transparent;
     }
+
     .hero__title .gold-word {
       color: var(--gold);
       display: block;
@@ -83,7 +89,7 @@
 
     .hero__text {
       font-size: 15px;
-      color: rgba(245,240,229,0.55);
+      color: rgba(245, 240, 229, 0.55);
       max-width: 380px;
       margin-bottom: 48px;
       line-height: 1.75;
@@ -100,6 +106,7 @@
       transform: translateY(20px);
       animation: heroFadeUp 0.9s ease 0.75s forwards;
     }
+
     .hero__cta-row .btn-hero-primary {
       background: var(--gold);
       color: var(--black);
@@ -115,14 +122,16 @@
       align-items: center;
       gap: 8px;
     }
+
     .hero__cta-row .btn-hero-primary:hover {
       background: transparent;
       color: var(--gold);
       transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(200,165,90,0.35);
+      box-shadow: 0 8px 28px rgba(200, 165, 90, 0.35);
     }
+
     .hero__cta-row .btn-hero-ghost {
-      color: rgba(245,240,229,0.6);
+      color: rgba(245, 240, 229, 0.6);
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.12em;
@@ -136,19 +145,26 @@
       cursor: pointer;
       font-family: var(--font-body);
     }
-    .hero__cta-row .btn-hero-ghost:hover { color: var(--cream); }
-    .hero__cta-row .btn-hero-ghost i { font-size: 18px; }
+
+    .hero__cta-row .btn-hero-ghost:hover {
+      color: var(--cream);
+    }
+
+    .hero__cta-row .btn-hero-ghost i {
+      font-size: 18px;
+    }
 
     .hero__stats {
       display: flex;
       gap: 36px;
       margin-top: 56px;
       padding-top: 40px;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
       opacity: 0;
       transform: translateY(20px);
       animation: heroFadeUp 0.9s ease 0.9s forwards;
     }
+
     .hero__stat-num {
       font-family: var(--font-display);
       font-size: 32px;
@@ -157,9 +173,10 @@
       line-height: 1;
       margin-bottom: 4px;
     }
+
     .hero__stat-label {
       font-size: 10px;
-      color: rgba(245,240,229,0.4);
+      color: rgba(245, 240, 229, 0.4);
       letter-spacing: 0.15em;
       text-transform: uppercase;
       font-weight: 600;
@@ -178,7 +195,7 @@
       font-weight: 700;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: rgba(245,240,229,0.25);
+      color: rgba(245, 240, 229, 0.25);
       opacity: 0;
       animation: heroFadeUp 1s ease 1.1s forwards;
     }
@@ -188,6 +205,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero__img {
       width: 100%;
       height: 100%;
@@ -197,6 +215,7 @@
       transition: transform 8s ease;
       display: block;
     }
+
     .hero__image-panel:hover .hero__img {
       transform: scale(1.0);
     }
@@ -207,7 +226,7 @@
       inset: 0;
       background:
         linear-gradient(to right, var(--black) 0%, transparent 25%),
-        linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 40%);
+        linear-gradient(to top, rgba(10, 10, 10, 0.7) 0%, transparent 40%);
       z-index: 1;
     }
 
@@ -218,10 +237,10 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      background: rgba(10,10,10,0.75);
+      background: rgba(10, 10, 10, 0.75);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       padding: 16px 24px;
       display: flex;
@@ -231,6 +250,7 @@
       opacity: 0;
       animation: heroFadeUp 0.9s ease 1.0s forwards;
     }
+
     .hero__product-tag img {
       width: 44px;
       height: 44px;
@@ -239,18 +259,21 @@
       border-radius: 8px;
       padding: 4px;
     }
+
     .hero__product-tag-name {
       font-size: 13px;
       font-weight: 600;
       color: var(--cream);
       margin-bottom: 2px;
     }
+
     .hero__product-tag-price {
       font-size: 11px;
       color: var(--gold);
       font-weight: 700;
       letter-spacing: 0.05em;
     }
+
     .hero__product-tag-arrow {
       width: 32px;
       height: 32px;
@@ -264,7 +287,10 @@
       flex-shrink: 0;
       transition: transform 0.3s ease;
     }
-    .hero__product-tag:hover .hero__product-tag-arrow { transform: translateX(3px); }
+
+    .hero__product-tag:hover .hero__product-tag-arrow {
+      transform: translateX(3px);
+    }
 
     /* Gold accent bar at right edge */
     .hero__accent-bar {
@@ -280,10 +306,16 @@
     }
 
     @keyframes heroFadeUp {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes heroFadeIn {
-      to { opacity: 1; }
+      to {
+        opacity: 1;
+      }
     }
 
     /* ── REST OF HOMEPAGE STYLES ── */
@@ -292,6 +324,7 @@
       text-align: center;
       padding: 120px 24px;
     }
+
     .brand-statement h2 {
       font-family: var(--font-display);
       font-size: clamp(32px, 4vw, 56px);
@@ -308,6 +341,7 @@
       padding: 0 48px 120px;
       background: var(--cream-deep);
     }
+
     .editorial__img {
       width: 100%;
       aspect-ratio: 3/4;
@@ -316,9 +350,10 @@
       transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease, filter 0.5s ease;
       cursor: pointer;
     }
+
     .editorial__img:hover {
       transform: scale(1.05) translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
       filter: brightness(1.1);
       position: relative;
       z-index: 10;
@@ -332,24 +367,41 @@
       align-items: center;
       gap: 40px;
     }
-    .sale-banner__content { text-align: center; padding: 60px 0; }
-    .sale-banner h2 { font-family: var(--font-serif); font-size: 32px; margin-bottom: 8px; }
-    .sale-banner p { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
-    
+
+    .sale-banner__content {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .sale-banner h2 {
+      font-family: var(--font-serif);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .sale-banner p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
     .stay-beyond {
       background: var(--cream);
       padding: 120px 0;
       text-align: center;
     }
+
     .stay-beyond__img {
       width: 200px;
       margin: 0 auto 40px;
     }
+
     .stay-beyond h2 {
       font-family: var(--font-display);
       font-size: 40px;
       margin-bottom: 12px;
     }
+
     .stay-beyond form {
       max-width: 600px;
       margin: 40px auto 0;
@@ -357,10 +409,12 @@
       flex-direction: column;
       gap: 20px;
     }
+
     .stay-beyond .form-input {
       padding: 20px 32px;
       font-size: 18px;
     }
+
     .stay-beyond .btn {
       padding: 24px 32px;
       font-size: 18px;
@@ -373,15 +427,21 @@
       transform: translateY(-50%);
       font-family: var(--font-display);
       font-size: 180px;
-      color: rgba(0,0,0,0.04);
+      color: rgba(0, 0, 0, 0.04);
       white-space: nowrap;
       pointer-events: none;
       display: flex;
       animation: bg-scroll 30s linear infinite;
     }
+
     @keyframes bg-scroll {
-      0% { transform: translateY(-50%) translateX(0); }
-      100% { transform: translateY(-50%) translateX(-50%); }
+      0% {
+        transform: translateY(-50%) translateX(0);
+      }
+
+      100% {
+        transform: translateY(-50%) translateX(-50%);
+      }
     }
 
     .features-strip {
@@ -392,38 +452,133 @@
       background: var(--cream-dark);
       text-align: center;
     }
-    .feature-item i { font-size: 24px; margin-bottom: 12px; color: var(--gold); }
-    .feature-item h4 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
-    .feature-item p { font-size: 11px; color: var(--text-muted); }
+
+    .feature-item i {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: var(--gold);
+    }
+
+    .feature-item h4 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .feature-item p {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
 
     @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; min-height: 100svh; }
-      .hero__content { padding: 100px 24px 40px; }
-      .hero__title { font-size: clamp(52px, 13vw, 80px); }
-      .hero__text { font-size: 14px; max-width: 100%; }
-      .hero__stats { gap: 24px; margin-top: 32px; padding-top: 24px; }
-      .hero__side-label { display: none; }
-      .hero__image-panel { height: 55vh; }
-      .hero__product-tag { bottom: 24px; padding: 12px 16px; }
-      .editorial { grid-template-columns: 1fr !important; padding: 0 20px 60px !important; }
-      .sale-banner { grid-template-columns: 1fr !important; text-align: center; padding: 40px 20px !important; gap: 0 !important; }
-      .sale-banner img { display: none; }
-      .sale-banner__content { padding: 0 !important; }
-      .features-strip { grid-template-columns: 1fr 1fr !important; padding: 40px 20px !important; gap: 24px !important; }
-      .stay-beyond form { padding: 0 20px; }
-      .stay-beyond h2 { font-size: 28px; }
-      .brand-statement { padding: 80px 20px; }
-      .brand-statement h2 { font-size: clamp(24px, 6vw, 40px); }
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: 100svh;
+      }
+
+      .hero__content {
+        padding: 100px 24px 40px;
+      }
+
+      .hero__title {
+        font-size: clamp(52px, 13vw, 80px);
+      }
+
+      .hero__text {
+        font-size: 14px;
+        max-width: 100%;
+      }
+
+      .hero__stats {
+        gap: 24px;
+        margin-top: 32px;
+        padding-top: 24px;
+      }
+
+      .hero__side-label {
+        display: none;
+      }
+
+      .hero__image-panel {
+        height: 55vh;
+      }
+
+      .hero__product-tag {
+        bottom: 24px;
+        padding: 12px 16px;
+      }
+
+      .editorial {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px 60px !important;
+      }
+
+      .sale-banner {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        padding: 40px 20px !important;
+        gap: 0 !important;
+      }
+
+      .sale-banner img {
+        display: none;
+      }
+
+      .sale-banner__content {
+        padding: 0 !important;
+      }
+
+      .features-strip {
+        grid-template-columns: 1fr 1fr !important;
+        padding: 40px 20px !important;
+        gap: 24px !important;
+      }
+
+      .stay-beyond form {
+        padding: 0 20px;
+      }
+
+      .stay-beyond h2 {
+        font-size: 28px;
+      }
+
+      .brand-statement {
+        padding: 80px 20px;
+      }
+
+      .brand-statement h2 {
+        font-size: clamp(24px, 6vw, 40px);
+      }
     }
+
     @media (max-width: 480px) {
-      .hero__content { padding: 88px 20px 32px; }
-      .hero__image-panel { height: 50vh; }
-      .hero__stats { flex-wrap: wrap; gap: 16px; }
-      .editorial { grid-template-columns: 1fr !important; }
-      .hero__cta-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .hero__content {
+        padding: 88px 20px 32px;
+      }
+
+      .hero__image-panel {
+        height: 50vh;
+      }
+
+      .hero__stats {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .editorial {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero__cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
     }
   </style>
 </head>
+
 <body>
   <!-- PRELOADER -->
   <div id="preloader" class="preloader">
@@ -433,15 +588,22 @@
   <!-- TICKER -->
   <div class="ticker">
     <div class="ticker__inner">
-      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div></div>
-      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div></div>
-      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div></div>
+      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP
+        AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div>
+      </div>
+      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP
+        AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div>
+      </div>
+      <div class="ticker__item">FREE WORLDWIDE SHIPPING ON ORDERS OVER ₦150,000 <div class="dot"></div> NEW DROP
+        AVAILABLE NOW <div class="dot"></div> NO ROAD FEELINGS <div class="dot"></div>
+      </div>
     </div>
   </div>
 
   <!-- NAV -->
   <nav class="nav nav--dark">
-    <a href="index.html" class="nav__logo" style="display: flex; align-items: center; padding: 12px 0;"><img src="Assets/BTW logo.png" alt="BTW Logo" style="height: 52px; object-fit: contain;"></a>
+    <a href="index.html" class="nav__logo" style="display: flex; align-items: center; padding: 12px 0;"><img
+        src="Assets/BTW logo.png" alt="BTW Logo" style="height: 52px; object-fit: contain;"></a>
     <div class="nav__links">
       <a href="index.html" style="color: var(--gold);">Home</a>
       <a href="shop.html">Shop</a>
@@ -449,11 +611,12 @@
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav__actions">
-      <button class="nav__icon-btn" aria-label="Search" onclick="showToast('Search coming soon!')"><i class="ph ph-magnifying-glass"></i></button>
+      <button class="nav__icon-btn" aria-label="Search" onclick="showToast('Search coming soon!')"><i
+          class="ph ph-magnifying-glass"></i></button>
       <button class="nav__cart-btn" onclick="toggleCartDrawer()">
         CART [<span class="cart-badge-text">0</span>]
       </button>
-      <button class="nav__hamburger"><span/><span/></button>
+      <button class="nav__hamburger"><span /><span /></button>
     </div>
   </nav>
 
@@ -480,8 +643,8 @@
       </h1>
 
       <p class="hero__text">
-        Premium streetwear forged for those who move different. 
-        Raw urban energy. Uncompromising quality. 
+        Premium streetwear forged for those who move different.
+        Raw urban energy. Uncompromising quality.
         Limited drops that define the new standard.
       </p>
 
@@ -542,15 +705,20 @@
     </div>
     <div class="container" style="position: relative; z-index: 2;">
       <h2 class="reveal">THERE'S A WORLD OF FASHION EVERYONE FOLLOWS. <br>THIS IS BEYOND IT.</h2>
-      <p class="t-muted reveal reveal-delay-1" style="font-size: 14px; max-width: 600px; margin: 0 auto;">Designed for the bold, our pieces are crafted with premium materials and an uncompromising attention to detail. Welcome to the new standard of streetwear. Beyond labels. Beyond boundaries.</p>
+      <p class="t-muted reveal reveal-delay-1" style="font-size: 14px; max-width: 600px; margin: 0 auto;">Designed for
+        the bold, our pieces are crafted with premium materials and an uncompromising attention to detail. Welcome to
+        the new standard of streetwear. Beyond labels. Beyond boundaries.</p>
     </div>
   </section>
 
   <!-- EDITORIAL -->
   <section class="editorial">
-    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_05_31 PM.png" alt="Editorial 1" class="editorial__img reveal reveal-delay-1">
-    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_09_10 PM.png" alt="Editorial 2" class="editorial__img reveal reveal-delay-2">
-    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_27_07 PM.png" alt="Editorial 3" class="editorial__img reveal reveal-delay-3">
+    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_05_31 PM.png" alt="Editorial 1"
+      class="editorial__img reveal reveal-delay-1">
+    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_09_10 PM.png" alt="Editorial 2"
+      class="editorial__img reveal reveal-delay-2">
+    <img src="Assets/ChatGPT Image Jun 12, 2026, 08_27_07 PM.png" alt="Editorial 3"
+      class="editorial__img reveal reveal-delay-3">
   </section>
 
   <!-- NEW ARRIVALS -->
@@ -558,13 +726,14 @@
     <div class="container">
       <div style="text-align: center; margin-bottom: 64px;">
         <h2 class="section-title reveal">ENTER THE NEXT DROP</h2>
-        <p class="t-muted reveal reveal-delay-1" style="font-size: 15px; margin-top: 12px;">Wear the version of you they haven't met yet.</p>
+        <p class="t-muted reveal reveal-delay-1" style="font-size: 15px; margin-top: 12px;">Wear the version of you they
+          haven't met yet.</p>
       </div>
 
       <div class="product-grid reveal reveal-delay-2" id="home-grid">
         <!-- Injected via JS from localStorage -->
       </div>
-      
+
       <div style="text-align: center; margin-top: 48px;" class="reveal reveal-delay-3">
         <a href="shop.html" class="btn btn-outline">View All Products</a>
       </div>
@@ -573,10 +742,12 @@
 
   <!-- SALE BANNER -->
   <section class="sale-banner">
-    <img src="Assets/woman-wearing-sunglasses-red-jacket-with-tattoo-front.png" alt="Model" style="height: 300px; object-fit: contain;">
+    <img src="Assets/woman-wearing-sunglasses-red-jacket-with-tattoo-front.png" alt="Model"
+      style="height: 300px; object-fit: contain;">
     <div class="sale-banner__content reveal">
       <h2>Limited-Time Sale</h2>
-      <p class="t-display" style="font-size: 48px; letter-spacing: 0.04em; color: var(--cream); margin-bottom: 16px;">BEYOND THE WORLD SALE IS LIVE</p>
+      <p class="t-display" style="font-size: 48px; letter-spacing: 0.04em; color: var(--cream); margin-bottom: 16px;">
+        BEYOND THE WORLD SALE IS LIVE</p>
       <p>Exclusive discounts on past collections. Limited stock available.</p>
       <a href="shop.html" class="btn btn-gold">Shop Sale</a>
     </div>
@@ -586,7 +757,8 @@
   <!-- STAY BEYOND (NEWSLETTER) -->
   <section class="stay-beyond">
     <div class="container-sm reveal">
-      <img src="Assets/BTW logo.png" alt="Beyond Logo" class="stay-beyond__img" style="height: 120px; object-fit: contain;">
+      <img src="Assets/BTW logo.png" alt="Beyond Logo" class="stay-beyond__img"
+        style="height: 120px; object-fit: contain;">
       <h2>STAY BEYOND.</h2>
       <p class="t-muted">Be first to know about drops, exclusive sales, and events near you.</p>
       <form onsubmit="event.preventDefault(); alert('Subscribed!');">
@@ -626,14 +798,15 @@
       <div class="footer__grid">
         <div class="reveal">
           <div class="footer__brand-name">BEYOND THE WORLD</div>
-          <p class="footer__tagline">Premium streetwear connecting global culture. Designed for the bold, crafted for the fearless.</p>
+          <p class="footer__tagline">Premium streetwear connecting global culture. Designed for the bold, crafted for
+            the fearless.</p>
           <div class="footer__socials">
             <a href="#" class="footer__social-link"><i class="ph ph-instagram-logo"></i></a>
             <a href="#" class="footer__social-link"><i class="ph ph-twitter-logo"></i></a>
             <a href="#" class="footer__social-link"><i class="ph ph-tiktok-logo"></i></a>
           </div>
         </div>
-        
+
         <div class="reveal reveal-delay-1">
           <h4 class="footer__col-title">Shop</h4>
           <div class="footer__links">
@@ -663,7 +836,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="footer__bottom reveal">
         <p class="footer__copy">&copy; 2026 Beyond The World. All rights reserved.</p>
         <div class="footer__bottom-links">
@@ -671,14 +844,16 @@
           <a href="#">Terms of Service</a>
         </div>
       </div>
-      <p class="footer__signature">Designed &amp; Developed by <a href="#" title="The Sylvester — Designer & Developer">The Sylvester</a></p>
+      <p class="footer__signature">Designed &amp; Developed by <a href="#"
+          title="The Sylvester — Designer & Developer">The Sylvester</a></p>
     </div>
   </footer>
 
   <script src="js/cart.js"></script>
   <!-- WHATSAPP FLOATING BUTTON -->
-  <a href="https://wa.me/1234567890" target="_blank" class="wa-float">
+  <a href="https://wa.me/+2349168023113" target="_blank" class="wa-float">
     <i class="ph ph-whatsapp-logo"></i> <span class="wa-float-text">Chat with us</span>
   </a>
 </body>
+
 </html>
