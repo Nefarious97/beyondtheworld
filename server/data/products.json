@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Beyond Skeleton Tee",
+    "category": "tshirts",
+    "price": 65000,
+    "image": "Assets/Shirt.png",
+    "tag": "new",
+    "available": true,
+    "isNew": true
+  },
+  {
+    "id": "2",
+    "name": "Classic Cap",
+    "category": "caps",
+    "price": 45000,
+    "image": "Assets/Cap.png",
+    "tag": "",
+    "available": true,
+    "isNew": false
+  },
+  {
+    "id": "3",
+    "name": "Essential Trousers",
+    "category": "pants",
+    "price": 85000,
+    "image": "Assets/trouser.png",
+    "tag": "new",
+    "available": true,
+    "isNew": true
+  }
+]

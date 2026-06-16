@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Beyond The World</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <img src="Assets/BTW logo.png" alt="Loading..." class="preloader__logo">
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav nav--dark">
+    <a href="index.html" class="nav__logo" style="display: flex; align-items: center; padding: 12px 0;"><img src="Assets/BTW logo.png" alt="BTW Logo" style="height: 52px; object-fit: contain;"></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html" style="color: var(--gold);">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <button class="nav__icon-btn" aria-label="Search" onclick="showToast('Search coming soon!')"><i class="ph ph-magnifying-glass"></i></button>
+      <button class="nav__cart-btn" onclick="toggleCartDrawer()">
+        CART [<span class="cart-badge-text">0</span>]
+      </button>
+      <button class="nav__hamburger"><span/><span/></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html" style="color: var(--gold);">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="padding-bottom: 0;">
+    <div class="container">
+      <h1 class="page-hero__title reveal">Our Story</h1>
+      <p class="page-hero__sub reveal reveal-delay-1" style="max-width: 500px; margin: 0 auto 80px; line-height: 1.8;">Beyond The World was born from the streets, raised by culture, and designed for those who refuse to blend in.</p>
+      
+      <img src="Assets/ChatGPT Image Jun 12, 2026, 08_27_07 PM.png" alt="About Hero" class="reveal reveal-delay-2" style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container-sm" style="text-align: center;">
+      <h2 style="font-family: var(--font-display); font-size: 40px; margin-bottom: 24px;" class="reveal">Built on Authenticity</h2>
+      <p class="t-muted reveal reveal-delay-1" style="font-size: 16px; line-height: 1.8; margin-bottom: 40px;">
+        We started Beyond The World with a simple mission: to create premium streetwear that doesn't compromise on quality or aesthetics. Every piece we release is meticulously designed, tested, and crafted to stand the test of time.
+      </p>
+      <p class="t-muted reveal reveal-delay-2" style="font-size: 16px; line-height: 1.8;">
+        Our drops are limited because we believe in exclusivity and reducing waste. We source the finest heavyweight cottons, construct with durable stitching, and finish with our signature aesthetic. This isn't just clothing; it's a statement.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--cream-dark);">
+    <div class="container">
+      <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <img src="Assets/ChatGPT Image Jun 12, 2026, 08_28_40 PM.png" alt="Process" class="reveal" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+        <div class="reveal reveal-delay-1">
+          <h2 style="font-family: var(--font-display); font-size: 40px; margin-bottom: 24px;">No Road Feelings</h2>
+          <p class="t-muted" style="margin-bottom: 24px;">Our signature motto represents our relentless pursuit of innovation. We don't follow trends; we create them. When you wear BTW, you're stepping beyond the ordinary.</p>
+          <a href="shop.html" class="btn btn-outline">Explore The Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="reveal">
+          <div class="footer__brand-name">BEYOND THE WORLD</div>
+          <p class="footer__tagline">Premium streetwear connecting global culture. Designed for the bold, crafted for the fearless.</p>
+        </div>
+        
+        <div class="reveal reveal-delay-1">
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html">New Arrivals</a>
+            <a href="shop.html">T-Shirts</a>
+            <a href="shop.html">Accessories</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <h4 class="footer__col-title">Support</h4>
+          <div class="footer__links">
+            <a href="contact.html">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <h4 class="footer__col-title">Newsletter</h4>
+          <div class="footer__input-wrap">
+            <input type="email" class="footer__input" placeholder="Enter your email">
+            <button class="footer__input-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom reveal">
+        <p class="footer__copy">&copy; 2026 Beyond The World. All rights reserved.</p>
+      </div>
+      <p class="footer__signature">Designed &amp; Developed by <a href="#" title="The Sylvester — Designer & Developer">The Sylvester</a></p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/1234567890" target="_blank" class="wa-float">
+    <i class="ph ph-whatsapp-logo"></i> <span class="wa-float-text">Chat with us</span>
+  </a>
+</body>
+</html>
+

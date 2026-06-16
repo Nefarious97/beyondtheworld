@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Beyond The World</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <img src="Assets/BTW logo.png" alt="Loading..." class="preloader__logo">
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav nav--dark">
+    <a href="index.html" class="nav__logo" style="display: flex; align-items: center; padding: 12px 0;"><img src="Assets/BTW logo.png" alt="BTW Logo" style="height: 52px; object-fit: contain;"></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" style="color: var(--gold);">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <button class="nav__icon-btn" aria-label="Search" onclick="showToast('Search coming soon!')"><i class="ph ph-magnifying-glass"></i></button>
+      <button class="nav__cart-btn" onclick="toggleCartDrawer()">
+        CART [<span class="cart-badge-text">0</span>]
+      </button>
+      <button class="nav__hamburger"><span/><span/></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" style="color: var(--gold);">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title reveal">Get in Touch</h1>
+      <p class="page-hero__sub reveal reveal-delay-1">We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+        
+        <div class="reveal">
+          <h2 style="font-family: var(--font-display); font-size: 40px; margin-bottom: 24px;">Send a Message</h2>
+          <form onsubmit="event.preventDefault(); showToast('Message sent! We will get back to you shortly.'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-input" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 16px;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div style="background: var(--cream-dark); padding: 48px; border-radius: var(--radius-lg); height: 100%;">
+            <h3 style="font-family: var(--font-display); font-size: 28px; margin-bottom: 32px;">Customer Support</h3>
+            
+            <div style="display: flex; gap: 16px; margin-bottom: 32px;">
+              <i class="ph ph-envelope t-gold" style="font-size: 24px;"></i>
+              <div>
+                <h4 style="font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">Email</h4>
+                <p class="t-muted">support@beyondtheworld.com</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 32px;">
+              <i class="ph ph-clock t-gold" style="font-size: 24px;"></i>
+              <div>
+                <h4 style="font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">Hours</h4>
+                <p class="t-muted">Mon - Fri: 9am - 5pm EST</p>
+              </div>
+            </div>
+
+            <h3 style="font-family: var(--font-display); font-size: 24px; margin: 48px 0 24px;">Follow Us</h3>
+            <div style="display: flex; gap: 16px;">
+              <a href="#" class="btn btn-outline" style="padding: 12px; border-radius: 50%;"><i class="ph ph-instagram-logo" style="font-size: 20px;"></i></a>
+              <a href="#" class="btn btn-outline" style="padding: 12px; border-radius: 50%;"><i class="ph ph-twitter-logo" style="font-size: 20px;"></i></a>
+              <a href="#" class="btn btn-outline" style="padding: 12px; border-radius: 50%;"><i class="ph ph-tiktok-logo" style="font-size: 20px;"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="reveal">
+          <div class="footer__brand-name">BEYOND THE WORLD</div>
+          <p class="footer__tagline">Premium streetwear connecting global culture. Designed for the bold, crafted for the fearless.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="footer__social-link"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" class="footer__social-link"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+        
+        <div class="reveal reveal-delay-1">
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html">New Arrivals</a>
+            <a href="shop.html">T-Shirts</a>
+            <a href="shop.html">Accessories</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <h4 class="footer__col-title">Support</h4>
+          <div class="footer__links">
+            <a href="contact.html">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <h4 class="footer__col-title">Newsletter</h4>
+          <p class="footer__newsletter-text">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <div class="footer__input-wrap">
+            <input type="email" class="footer__input" placeholder="Enter your email">
+            <button class="footer__input-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom reveal">
+        <p class="footer__copy">&copy; 2026 Beyond The World. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p class="footer__signature">Designed &amp; Developed by <a href="#" title="The Sylvester — Designer & Developer">The Sylvester</a></p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/1234567890" target="_blank" class="wa-float">
+    <i class="ph ph-whatsapp-logo"></i> <span class="wa-float-text">Chat with us</span>
+  </a>
+</body>
+</html>
+
